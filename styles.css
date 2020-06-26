@@ -1,0 +1,154 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+   background-color: #f2f2f2;
+   width: 100%;
+   margin: auto;
+   align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.title-container{
+    flex: 1;
+    position:relative;
+    left: 50px;
+
+}
+
+nav{
+    flex: 1;
+    position: relative;
+    justify-content: flex-end;
+
+}
+.nav-link:hover{
+    color: #ff5c0f;
+}
+
+.contact{
+    
+    justify-content: flex-end;
+
+}
+
+.presentation{
+    display: flex;
+    
+    flex-direction: row;
+    
+    
+}
+
+.intro-text{
+    position: absolute;
+    margin: 200px 0px 200px 50px;
+    
+
+
+}
+
+.cover{
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+
+}
+
+.info{
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #20a8b4 ;
+    position: absolute;
+    margin: 300px 0px 200px 50px;
+    font-size: 18px;
+    color: white;
+    width: auto;
+}
+.info:hover{
+    background-color: #ff5c0f;
+}
+
+.contact-link{
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #20a8b4 ;
+    font-size: 18px;
+    color: white;
+    width: auto;
+}
+.contact-link:hover{
+    background-color: #ff5c0f;
+}
+.hr3{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+.hr4{
+    color: #ff5c0f;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hr5{
+    font-weight: bold;
+}
+
+.title-1{
+    color: #20a8b4;
+}
+
+.title-2{
+    color: #ff5c0f;
+}
+
+@media screen and (max-width: 768px){
+
+    header{
+        display: block;
+        flex-direction: column;
+    }
+
+    .title-container{
+        justify-content: flex-start;
+    }
+    
+    
+    .nav-links{
+        flex-direction: column;
+        
+    }
+    
+    .cover{
+        display: none;
+    }
+    .contact-link{
+        display: block;
+        width:100%;
+        
+    }
+    
+    .info{
+        display: block;
+        width: 97%;
+        margin: 100px 0px 100px 0px;
+    }
+    
+    .intro-text{
+        margin: auto;
+    }
+
+}
